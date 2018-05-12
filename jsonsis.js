@@ -75,7 +75,7 @@ const studentSchema = new mongoose.Schema({
 	memberOf: [{memberOfSchema}],
 	absenceTracker: [{eventID: String, number: Number}],
 	gradesSemester: [{gradeSemesterSchema}],
-	onGoingComments: String
+	onGoingComment: String
 });
 
 const studentModel = mongoose.model('studentModel', studentSchema, 'students')
