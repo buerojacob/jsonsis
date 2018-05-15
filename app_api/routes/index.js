@@ -7,7 +7,13 @@ const ctrlStudents = require('../controllers/students');
 router
   .route('/students')
   .get(ctrlStudents.studentsList)
- // .post(ctrlLocations.locationsCreate);
+  .post(ctrlStudents.studentsCreate);
+
+//student
+router
+  .route('/students/readone')
+  .post(ctrlStudents.studentsReadOne)
+
 
 /* 
 router
