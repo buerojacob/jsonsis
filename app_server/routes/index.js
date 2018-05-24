@@ -32,7 +32,7 @@ router.get('/location/review/new', ctrlLocations.addReview);
 router.get('/about', ctrlOthers.about);
 
 /* jsonSIS pages */
-//router.get('/jsonsis', ctrljsonsis.jsonsis_testpage);
+router.get('/jsonsis', ctrljsonsis.jsonsis);
 
 
 
